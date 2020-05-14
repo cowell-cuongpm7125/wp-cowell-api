@@ -1,4 +1,4 @@
-# WWP Co-well API
+# WP Co-well API
 This package makes it easy to build project
 
 ## Postcardware

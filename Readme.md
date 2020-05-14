@@ -22,7 +22,7 @@ Plugin for change password. Information API below:
   + password_confimation
   + cookie
 
-`cookie` was be after login
+`cookie` be return after login
 
 Message successfully
 ```$xslt

@@ -4,6 +4,7 @@
  * Author: Co-well Developer
  * Description: API for WP: change password
  */
+require __DIR__ . '/vendor/autoload.php';
 
 add_filter('json_api_controllers', function ($controllers) {
     $controllers[] = 'CoWellAPI';

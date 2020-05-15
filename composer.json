@@ -1,0 +1,21 @@
+{
+  "name": "co-well/wp-api",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [ "module", "crud", "editor", "repository", "html", "api", "document", "php", "laravel"],
+  "authors": [
+    {
+      "name": "Fight Light Diamond",
+      "email": "i.am.m.cuong@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "CoWell\\": "src/"
+    }
+  },
+  "require": {
+
+  }
+}

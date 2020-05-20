@@ -9,10 +9,13 @@ You're free to use this package (it's MIT-licensed), but if it makes it to your 
 ## Requires
 - Wordpress
 - Plugin [JSON API](https://github.com/PI-Media/json-api)
+- Plugin [JSON API](https://github.com/PI-Media/json-api)
 - Plugin [API JSON USER](https://vi.wordpress.org/plugins/json-api-user/)
-
+- Plugin [Woocommerce](https://woocommerce.com/my-dashboard/)
+- Plugin [VNPay for Woocommerce](https://sandbox.vnpayment.vn/apis/docs/open/woocommerce/)
 
 ## Usage
+### Change password
 Plugin for change password. Information API below:
 - API: {domain}/api/cowellapi/change_password/
 - Method: POST
@@ -28,3 +31,10 @@ Message successfully
 ```$xslt
 {"status":"ok","message":"Change password successfully"}
 ```
+
+### VNPay
+Payment for order
+- API: {domain}/api/vnp/pay?order_id={order_id}
+- Method: GET
+- params:
+  + order_id

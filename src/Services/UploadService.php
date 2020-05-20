@@ -18,7 +18,7 @@ class UploadService
             return $this->fileUpload($_REQUEST[$name], $targetDir);
         }
 
-        return "Image must is  file format or base64 format";
+        throw new \Exception('Image must is  file format or base64 format', 422);
     }
 
     function base64Upload($image, $targetDir)
@@ -34,13 +34,11 @@ class UploadService
         $f = finfo_open();
         $mimeType = finfo_buffer($f, $imgData, FILEINFO_MIME_TYPE);
         $typeFile = explode('/', $mimeType);
-        $targetFile = $this->generateFileName($typeFile[1]);
+        $targetFile =  $targetDir . $this->generateFileName($typeFile[1]);
 
-        $path = $targetDir . $targetFile;
+        file_put_contents($targetFile, $imgData);
 
-        file_put_contents($path, $imgData);
-
-        return $path;
+        return $targetFile;
     }
 
     function fileUpload($file, $targetDir)

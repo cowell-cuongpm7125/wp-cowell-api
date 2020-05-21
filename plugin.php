@@ -3,7 +3,7 @@
  * Plugin Name: WP Co-well API
  * Author: Co-well Developer
  * Description: API for WP(Change password, VNpay)
- * Version: 0.1
+ * Version: 0.2
  */
 require __DIR__ . '/vendor/autoload.php';
 
